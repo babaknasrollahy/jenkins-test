@@ -1,2 +1,2 @@
 #!/bin/bash
-ehco "hello , this message is for test 1"
+echo "hello , this message is for test 1"
