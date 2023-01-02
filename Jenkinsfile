@@ -4,7 +4,7 @@ pipeline{
     
     stage('Clone Source Code'){
       steps{
-        git branche: 'main', url:'https://github.com/babaknasrollahy/jenkins-test.git'
+        git branch: 'main', url:'https://github.com/babaknasrollahy/jenkins-test.git'
       }
     }
       stage('Dockerize'){
