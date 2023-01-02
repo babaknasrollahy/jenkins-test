@@ -7,7 +7,7 @@ pipeline{
       }
       stage('Dockerize'){
       steps{
-        docker build -t test:latest .
+        sh 'docker build -t test:latest .'
       }
     }
   }
