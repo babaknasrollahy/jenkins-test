@@ -16,7 +16,7 @@ pipeline{
     
       stage('removing'){
           steps{
-            sh 'docker-compose rm'
+            sh 'docker-compose rm -f'
             sh 'docker image rm bazipipeline_test'
           }
       }
