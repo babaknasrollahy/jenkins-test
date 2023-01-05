@@ -7,10 +7,18 @@ pipeline{
         git branch: 'main', url:'https://github.com/babaknasrollahy/jenkins-test.git'
       }
     }
+    
       stage('Dockerize'){
         steps{
           sh 'docker-compose up'
         }
+      }
+    
+      stage('removing'){
+          steps{
+            sh 'docker-compose rm'
+            sh 'docker image rm bazipipeline_test'
+          }
       }
   }
 }
