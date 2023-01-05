@@ -9,7 +9,7 @@ pipeline{
     }
       stage('Dockerize'){
         steps{
-          sh 'docker build -t test:latest .'
+          sh 'docker-compose up'
         }
       }
   }
